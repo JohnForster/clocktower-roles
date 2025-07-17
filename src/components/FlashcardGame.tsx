@@ -27,6 +27,7 @@ export const FlashcardGame: React.FC<FlashcardGameProps> = ({
   );
   const [quizCompleted, setQuizCompleted] = useState(false);
   const [shuffledCharacters, setShuffledCharacters] = useState<Character[]>([]);
+  const [preloadedImages, setPreloadedImages] = useState<Set<string>>(new Set());
 
   const { updateProgress, getProgress } = useProgress();
 
@@ -38,6 +39,46 @@ export const FlashcardGame: React.FC<FlashcardGameProps> = ({
       [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
     }
     return shuffled;
+  };
+
+  // Preload a single image
+  const preloadSingleImage = (character: Character): Promise<void> => {
+    return new Promise<void>((resolve) => {
+      const imagePath = getCharacterImagePath(character);
+      
+      // Skip if already preloaded
+      if (preloadedImages.has(imagePath)) {
+        resolve();
+        return;
+      }
+
+      const img = new Image();
+      img.onload = () => {
+        setPreloadedImages(prev => new Set([...prev, imagePath]));
+        resolve();
+      };
+      img.onerror = () => {
+        console.warn(`Failed to preload image for ${character.name}: ${imagePath}`);
+        resolve(); // Don't fail the process
+      };
+      img.src = imagePath;
+    });
+  };
+
+  // Preload images in background, in order of appearance
+  const startBackgroundPreloading = (characters: Character[]) => {
+    const preloadNext = async (index: number) => {
+      if (index >= characters.length) return;
+      
+      const character = characters[index];
+      await preloadSingleImage(character);
+      
+      // Continue with next image after a small delay to not block the UI
+      setTimeout(() => preloadNext(index + 1), 10);
+    };
+
+    // Start preloading from the beginning
+    preloadNext(0);
   };
 
   useEffect(() => {
@@ -67,9 +108,12 @@ export const FlashcardGame: React.FC<FlashcardGameProps> = ({
         setAnsweredCharacters(new Set());
         setQuizCompleted(false);
         setScore({ correct: 0, total: 0 });
+        setPreloadedImages(new Set());
 
         if (shuffled.length > 0) {
           generateNextQuestion(filteredCharacters, shuffled);
+          // Start background preloading in the order questions will appear
+          startBackgroundPreloading(shuffled);
         }
       } catch (error) {
         console.error("Failed to load characters:", error);
@@ -111,6 +155,9 @@ export const FlashcardGame: React.FC<FlashcardGameProps> = ({
     setCurrentQuestion(question);
     setSelectedAnswer(null);
     setShowResult(false);
+
+    // Preload the current question's image immediately if not already preloaded
+    preloadSingleImage(nextCharacter);
   };
 
   const handleAnswerSelect = (answer: string) => {

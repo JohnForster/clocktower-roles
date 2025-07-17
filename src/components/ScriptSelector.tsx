@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { getAvailableScripts } from '../utils/dataLoader';
+import React, { useState, useEffect } from "react";
+import { getAvailableScripts } from "../utils/dataLoader";
 
 interface ScriptSelectorProps {
   selectedScript: string | null;
@@ -14,7 +14,7 @@ export const ScriptSelector: React.FC<ScriptSelectorProps> = ({
   onScriptSelect,
   includeTravellers,
   onToggleTravellers,
-  onContinue
+  onContinue,
 }) => {
   const [scripts, setScripts] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
@@ -25,7 +25,7 @@ export const ScriptSelector: React.FC<ScriptSelectorProps> = ({
         const availableScripts = await getAvailableScripts();
         setScripts(availableScripts);
       } catch (error) {
-        console.error('Failed to load scripts:', error);
+        console.error("Failed to load scripts:", error);
       } finally {
         setLoading(false);
       }
@@ -36,16 +36,15 @@ export const ScriptSelector: React.FC<ScriptSelectorProps> = ({
 
   // Focus on the main scripts you mentioned
   const priorityScripts = [
-    'Trouble Brewing',
-    'Bad Moon Rising',
-    'Sects and Violets',
-    'Kickstarter',
-    'Carousel Experimental'
+    "Trouble Brewing",
+    "Bad Moon Rising",
+    "Sects and Violets",
+    "The Carousel",
   ];
 
   const orderedScripts = [
-    ...priorityScripts.filter(script => scripts.includes(script)),
-    ...scripts.filter(script => !priorityScripts.includes(script))
+    ...priorityScripts.filter((script) => scripts.includes(script)),
+    ...scripts.filter((script) => !priorityScripts.includes(script)),
   ];
 
   if (loading) {
@@ -57,18 +56,18 @@ export const ScriptSelector: React.FC<ScriptSelectorProps> = ({
       <h2>Select a Script</h2>
       <div className="script-options">
         <select
-          value={selectedScript || ''}
+          value={selectedScript || ""}
           onChange={(e) => onScriptSelect(e.target.value)}
           className="script-dropdown"
         >
           <option value="">Choose a script...</option>
-          {orderedScripts.map(script => (
+          {orderedScripts.map((script) => (
             <option key={script} value={script}>
               {script}
             </option>
           ))}
         </select>
-        
+
         <div className="traveller-toggle">
           <label className="checkbox-label">
             <input
@@ -80,12 +79,9 @@ export const ScriptSelector: React.FC<ScriptSelectorProps> = ({
             Include Travellers
           </label>
         </div>
-        
+
         {selectedScript && (
-          <button
-            className="continue-button"
-            onClick={onContinue}
-          >
+          <button className="continue-button" onClick={onContinue}>
             Continue
           </button>
         )}
