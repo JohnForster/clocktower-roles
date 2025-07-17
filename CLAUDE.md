@@ -4,7 +4,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This repository contains a comprehensive data collection for Blood on the Clocktower characters, a social deduction game. The project stores character information in structured JSON format with corresponding images.
+This repository contains a comprehensive data collection for Blood on the Clocktower characters, a social deduction game. The project includes both structured character data and a Progressive Web App (PWA) for learning character abilities through flashcards.
+
+**Live Application**: https://johnforster.github.io/clocktower-roles/
+
+The project stores character information in structured JSON format with corresponding images, and provides an interactive flashcard quiz system for learning character abilities.
 
 ## Data Structure
 
@@ -25,6 +29,8 @@ Each character is defined by a JSON file in `data/characters/` with the followin
 - **Outsider**: Good team players with potentially harmful abilities
 - **Minion**: Evil team support players
 - **Demon**: Evil team killing players
+- **Fabled**: Special characters that modify game rules
+- **Travellers**: Optional characters that can join mid-game
 
 ## Repository Structure
 
@@ -33,6 +39,15 @@ Each character is defined by a JSON file in `data/characters/` with the followin
 ├── data/
 │   ├── characters/     # JSON files for each character
 │   └── images/         # PNG images for each character
+├── src/
+│   ├── components/     # React components
+│   ├── hooks/         # Custom React hooks
+│   ├── types/         # TypeScript type definitions
+│   ├── utils/         # Utility functions
+│   └── App.tsx        # Main application component
+├── public/            # Static assets
+├── dist/              # Production build output
+└── package.json       # Project dependencies and scripts
 ```
 
 ## Working with Character Data
@@ -52,17 +67,36 @@ Each character is defined by a JSON file in `data/characters/` with the followin
 - Remove spaces and special characters from filenames
 - Images should use the same naming convention with `.png` extension
 
+## Available Scripts
+
+The application supports the following game scripts:
+- **Trouble Brewing** - Base game script for beginners
+- **Bad Moon Rising** - Intermediate complexity with more chaos
+- **Sects and Violets** - Advanced script with complex interactions
+- **The Carousel** - Combined experimental characters from Kickstarter and Carousel
+- **Fabled** - Special rule-modifying characters
+
 ## Data Validation
 
 When working with character data:
 - Ensure all required fields are present
-- Validate that character types are one of the four valid options
+- Validate that character types are one of the valid options (townsfolk, outsider, minion, demon, fabled, travellers)
 - Check that boolean fields (`first_night`, `other_nights`, `affects_setup`) are properly set
 - Verify image references exist in the `data/images/` directory
+- Ensure `home_script` matches one of the available scripts
 
 ## Flashcard Application
 
-This repository also contains a Progressive Web App (PWA) for learning character abilities through flashcards.
+The primary feature of this repository is a Progressive Web App (PWA) for learning character abilities through interactive flashcards.
+
+### Key Features
+- **Script Selection** - Choose from 5 different game scripts
+- **Multiple Choice Quiz** - Test knowledge of character abilities
+- **Progress Tracking** - localStorage-based progress system
+- **Responsive Design** - Works on desktop and mobile devices
+- **Offline Support** - PWA capabilities with service worker
+- **Smart Image Preloading** - Background loading for smooth gameplay
+- **Centered Desktop Layout** - Optimal viewing experience
 
 ### Development Commands
 - `npm run dev` - Start development server
@@ -85,16 +119,19 @@ The flashcard app is built with:
 
 ### Data Flow
 1. Character data is loaded from JSON files in `data/characters/`
-2. Images are served from `data/images/`
+2. Images are served from `data/images/` with proper base path handling
 3. Questions are generated using similarity algorithms for wrong answers
 4. User progress is stored in localStorage and used to prioritize difficult characters
+5. Images are preloaded in background in quiz order for smooth experience
 
-### File Structure
-```
-src/
-├── components/          # React components
-├── hooks/              # Custom React hooks
-├── types/              # TypeScript type definitions
-├── utils/              # Utility functions
-└── App.tsx             # Main application component
-```
+### Recent Improvements
+- **Background Image Preloading** - Eliminates loading delays during gameplay
+- **Fixed Fabled Script Bug** - Fabled characters now load correctly
+- **Mobile UI Enhancements** - Improved responsive design and layout consistency
+- **Deployment Path Fix** - Images load correctly on GitHub Pages
+- **Centered Desktop Layout** - Better desktop user experience
+
+### Deployment
+- **Production URL**: https://johnforster.github.io/clocktower-roles/
+- **Deployment**: Automated via GitHub Actions
+- **Base Path**: `/clocktower-roles` for GitHub Pages compatibility

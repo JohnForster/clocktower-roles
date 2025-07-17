@@ -272,20 +272,35 @@ export const FlashcardGame: React.FC<FlashcardGameProps> = ({
       </div>
 
       <div className="flashcard">
-        <div className="character-info">
-          <div className="character-image-container">
-            <div className="character-image-background"></div>
-            <img
-              src={getCharacterImagePath(currentQuestion.character)}
-              alt={currentQuestion.character.name}
-              className="character-image"
-              onError={handleImageError}
-            />
+        {currentQuestion.type === 'ability-from-name' && (
+          <div className="character-info">
+            <div className="character-image-container">
+              <div className="character-image-background"></div>
+              <img
+                src={getCharacterImagePath(currentQuestion.character)}
+                alt={currentQuestion.character.name}
+                className="character-image"
+                onError={handleImageError}
+              />
+            </div>
+            <div className="character-details">
+              <h3 className="character-name">{currentQuestion.character.name}</h3>
+              <p className="character-type">{currentQuestion.character.type}</p>
+            </div>
           </div>
-          <div className="character-details">
-            <h3 className="character-name">{currentQuestion.character.name}</h3>
-            <p className="character-type">{currentQuestion.character.type}</p>
-          </div>
+        )}
+
+        <div className="question">
+          <h4>
+            {currentQuestion.type === 'ability-from-name' 
+              ? 'What is this character\'s ability?' 
+              : 'Which character has this ability?'}
+          </h4>
+          {currentQuestion.type === 'name-from-ability' && (
+            <div className="ability-text">
+              "{currentQuestion.character.ability}"
+            </div>
+          )}
         </div>
 
         <div className="options">
@@ -298,6 +313,33 @@ export const FlashcardGame: React.FC<FlashcardGameProps> = ({
               } else if (option === selectedAnswer) {
                 buttonClass += " incorrect";
               }
+            }
+
+            // For name-from-ability questions, show character icons
+            if (currentQuestion.type === 'name-from-ability') {
+              const character = characters.find(char => char.name === option);
+              
+              return (
+                <button
+                  key={index}
+                  className={`${buttonClass} option-with-icon`}
+                  onClick={() => handleAnswerSelect(option)}
+                  disabled={showResult}
+                >
+                  {character && (
+                    <div className="option-icon-container">
+                      <div className="option-icon-background"></div>
+                      <img
+                        src={getCharacterImagePath(character)}
+                        alt={character.name}
+                        className="option-icon"
+                        onError={handleImageError}
+                      />
+                    </div>
+                  )}
+                  <span className="option-text">{option}</span>
+                </button>
+              );
             }
 
             return (
