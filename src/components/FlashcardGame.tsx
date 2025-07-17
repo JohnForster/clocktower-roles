@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Character, FlashcardQuestion } from "../types/character";
 import { loadCharactersByScript } from "../utils/dataLoader";
-import {
-  generateFlashcardQuestion,
-  selectNextCharacter,
-} from "../utils/questionGenerator";
+import { generateFlashcardQuestion } from "../utils/questionGenerator";
 import { useProgress } from "../hooks/useProgress";
 
 interface FlashcardGameProps {
@@ -31,7 +28,7 @@ export const FlashcardGame: React.FC<FlashcardGameProps> = ({
   const [quizCompleted, setQuizCompleted] = useState(false);
   const [shuffledCharacters, setShuffledCharacters] = useState<Character[]>([]);
 
-  const { progress, updateProgress, getProgress } = useProgress();
+  const { updateProgress, getProgress } = useProgress();
 
   // Fisher-Yates shuffle algorithm
   const shuffleArray = <T,>(array: T[]): T[] => {
