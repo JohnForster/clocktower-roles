@@ -47,6 +47,19 @@ function App() {
           </div>
         )}
       </main>
+      <footer className="app-footer">
+        <div className="footer-content">
+          <p>
+            Blood on the Clocktower™ © 2019 - 2025 The Pandemonium Institute
+            Ltd. All rights reserved.
+          </p>
+          <p>
+            This is an unofficial fan-made study tool. All character names,
+            abilities, and artwork are the property of The Pandemonium Institute
+            Ltd.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
