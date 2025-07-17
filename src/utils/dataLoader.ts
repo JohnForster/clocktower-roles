@@ -4,14 +4,12 @@ import { Character, Script } from '../types/character';
 const characterModules = import.meta.glob('../../data/characters/*.json');
 
 export async function loadAllCharacters(): Promise<Character[]> {
-  const characters: Character[] = [];
+  const characterPromises = Object.values(characterModules).map(async (moduleLoader) => {
+    const module = await moduleLoader() as any;
+    return module.default || module;
+  });
   
-  for (const path in characterModules) {
-    const module = await characterModules[path]() as any;
-    characters.push(module.default || module);
-  }
-  
-  return characters;
+  return Promise.all(characterPromises);
 }
 
 export async function loadCharactersByScript(scriptName: string): Promise<Character[]> {
