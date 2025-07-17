@@ -40,12 +40,16 @@ export const ScriptSelector: React.FC<ScriptSelectorProps> = ({
     "Bad Moon Rising",
     "Sects and Violets",
     "The Carousel",
+    "Base 3",
   ];
 
   const orderedScripts = [
     ...priorityScripts.filter((script) => scripts.includes(script)),
-    ...scripts.filter((script) => !priorityScripts.includes(script)),
-  ];
+    ...scripts.filter(
+      (script) => !priorityScripts.includes(script) && script !== "All"
+    ),
+    "All", // Always put "All" at the end
+  ].filter((script) => scripts.includes(script));
 
   if (loading) {
     return <div>Loading scripts...</div>;

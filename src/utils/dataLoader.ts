@@ -18,6 +18,21 @@ export async function loadCharactersByScript(
   scriptName: string
 ): Promise<Character[]> {
   const allCharacters = await loadAllCharacters();
+  
+  // Handle special script combinations
+  if (scriptName === "Base 3") {
+    return allCharacters.filter(
+      (character) => 
+        character.home_script === "Trouble Brewing" ||
+        character.home_script === "Bad Moon Rising" ||
+        character.home_script === "Sects and Violets"
+    );
+  }
+  
+  if (scriptName === "All") {
+    return allCharacters;
+  }
+  
   return allCharacters.filter(
     (character) => character.home_script === scriptName
   );
@@ -31,7 +46,13 @@ export async function getAvailableScripts(): Promise<string[]> {
     scriptNames.add(character.home_script);
   });
 
-  return Array.from(scriptNames).sort();
+  const scripts = Array.from(scriptNames).sort();
+  
+  // Add special script combinations
+  scripts.unshift("Base 3");
+  scripts.push("All");
+
+  return scripts;
 }
 
 export async function loadScriptData(): Promise<Script[]> {
