@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Character, FlashcardQuestion } from "../types/character";
-import { loadCharactersByScript } from "../utils/dataLoader";
+import { loadCharactersByScript, getCharacterImagePath } from "../utils/dataLoader";
 import { generateFlashcardQuestion } from "../utils/questionGenerator";
 import { useProgress } from "../hooks/useProgress";
 
@@ -141,9 +141,6 @@ export const FlashcardGame: React.FC<FlashcardGameProps> = ({
     }
   };
 
-  const getCharacterImagePath = (character: Character): string => {
-    return `/data/images/${character.icon}`;
-  };
 
   const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
     console.warn(`Failed to load image: ${e.currentTarget.src}`);
