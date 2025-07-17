@@ -107,8 +107,13 @@ function generateAbilityFromNameQuestion(
   // Add abilities from similar characters (avoid duplicates)
   similarCharacters.forEach((char) => {
     if (!usedAbilities.has(char.ability) && options.length < 4) {
-      options.push(char.ability);
-      usedAbilities.add(char.ability);
+      // Replace the incorrect character's name with the target character's name
+      const modifiedAbility = replaceOwnNameInAbility(
+        char.ability,
+        char.name
+      ).replace(/<This Character>/g, targetCharacter.name);
+      options.push(modifiedAbility);
+      usedAbilities.add(modifiedAbility);
     }
   });
 
@@ -129,8 +134,13 @@ function generateAbilityFromNameQuestion(
 
       for (const char of additionalCharacters) {
         if (!usedAbilities.has(char.ability) && options.length < 4) {
-          options.push(char.ability);
-          usedAbilities.add(char.ability);
+          // Replace the incorrect character's name with the target character's name
+          const modifiedAbility = replaceOwnNameInAbility(
+            char.ability,
+            char.name
+          ).replace(/<This Character>/g, targetCharacter.name);
+          options.push(modifiedAbility);
+          usedAbilities.add(modifiedAbility);
           added = true;
           break;
         }
