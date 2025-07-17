@@ -87,11 +87,11 @@ export const FlashcardGame: React.FC<FlashcardGameProps> = ({
         setLoading(true);
         const scriptCharacters = await loadCharactersByScript(selectedScript);
 
-        // Filter out travellers and fabled if not included
+        // Filter out travellers if not included
         const filteredCharacters = scriptCharacters.filter((character) => {
           if (
             !includeTravellers &&
-            (character.type === "travellers" || character.type === "fabled")
+            character.type === "travellers"
           ) {
             return false;
           }
