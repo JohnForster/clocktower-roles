@@ -10,9 +10,11 @@ function App() {
 
   return (
     <div className="app">
-      <header className="app-header">
-        <h1>Blood on the Clocktower Flashcards</h1>
-      </header>
+      {!gameStarted && (
+        <header className="app-header">
+          <h1>Blood on the Clocktower Flashcards</h1>
+        </header>
+      )}
       
       <main className="app-main">
         {!gameStarted ? (
@@ -37,6 +39,10 @@ function App() {
             <FlashcardGame 
               selectedScript={selectedScript!} 
               includeTravellers={includeTravellers}
+              onReturnToSelection={() => {
+                setGameStarted(false)
+                setSelectedScript(null)
+              }}
             />
           </div>
         )}
