@@ -34,5 +34,4 @@ export default defineConfig({
     },
   },
   publicDir: "public",
-  base: "/clocktower-roles",
 });

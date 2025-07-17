@@ -61,5 +61,5 @@ export async function loadScriptData(): Promise<Script[]> {
 // Helper function to get character image path
 export function getCharacterImagePath(character: Character): string {
   // Use relative path that works with Vite base configuration
-  return `${import.meta.env.BASE_URL}/data/images/${character.icon}`;
+  return `${import.meta.env.BASE_URL}data/images/${character.icon}`;
 }
