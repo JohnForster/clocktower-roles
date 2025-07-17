@@ -1,1 +1,1 @@
-{"name": "Ferryman", "ability": "On the final day, all dead players regain their vote token.", "type": "fabled", "icon": "ferryman.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Extras"}
+{"name": "Ferryman", "ability": "On the final day, all dead players regain their vote token.", "type": "fabled", "icon": "ferryman.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Fabled"}

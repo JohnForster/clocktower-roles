@@ -7,5 +7,5 @@
   "other_nights": false,
   "reminders": ["SOMETHING BAD", "PROTECTED"],
   "affects_setup": false,
-  "home_script": "Extras"
+  "home_script": "Fabled"
 }

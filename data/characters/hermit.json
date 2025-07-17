@@ -1,1 +1,1 @@
-{"name": "Hermit", "ability": "You have all Outsider abilities. [-0 or -1 Outsider]", "type": "outsider", "icon": "hermit.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": true, "home_script": "Carousel Experimental"}
+{"name": "Hermit", "ability": "You have all Outsider abilities. [-0 or -1 Outsider]", "type": "outsider", "icon": "hermit.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": true, "home_script": "The Carousel"}

@@ -19,6 +19,7 @@ export interface FlashcardQuestion {
   character: Character;
   options: string[];
   correctAnswer: string;
+  type: 'ability-from-name' | 'name-from-ability';
 }
 
 export interface UserProgress {

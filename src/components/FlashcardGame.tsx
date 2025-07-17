@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Character, FlashcardQuestion } from "../types/character";
-import { loadCharactersByScript } from "../utils/dataLoader";
+import { loadCharactersByScript, getCharacterImagePath } from "../utils/dataLoader";
 import { generateFlashcardQuestion } from "../utils/questionGenerator";
 import { useProgress } from "../hooks/useProgress";
 
@@ -27,6 +27,7 @@ export const FlashcardGame: React.FC<FlashcardGameProps> = ({
   );
   const [quizCompleted, setQuizCompleted] = useState(false);
   const [shuffledCharacters, setShuffledCharacters] = useState<Character[]>([]);
+  const [preloadedImages, setPreloadedImages] = useState<Set<string>>(new Set());
 
   const { updateProgress, getProgress } = useProgress();
 
@@ -40,17 +41,57 @@ export const FlashcardGame: React.FC<FlashcardGameProps> = ({
     return shuffled;
   };
 
+  // Preload a single image
+  const preloadSingleImage = (character: Character): Promise<void> => {
+    return new Promise<void>((resolve) => {
+      const imagePath = getCharacterImagePath(character);
+      
+      // Skip if already preloaded
+      if (preloadedImages.has(imagePath)) {
+        resolve();
+        return;
+      }
+
+      const img = new Image();
+      img.onload = () => {
+        setPreloadedImages(prev => new Set([...prev, imagePath]));
+        resolve();
+      };
+      img.onerror = () => {
+        console.warn(`Failed to preload image for ${character.name}: ${imagePath}`);
+        resolve(); // Don't fail the process
+      };
+      img.src = imagePath;
+    });
+  };
+
+  // Preload images in background, in order of appearance
+  const startBackgroundPreloading = (characters: Character[]) => {
+    const preloadNext = async (index: number) => {
+      if (index >= characters.length) return;
+      
+      const character = characters[index];
+      await preloadSingleImage(character);
+      
+      // Continue with next image after a small delay to not block the UI
+      setTimeout(() => preloadNext(index + 1), 10);
+    };
+
+    // Start preloading from the beginning
+    preloadNext(0);
+  };
+
   useEffect(() => {
     const loadCharacters = async () => {
       try {
         setLoading(true);
         const scriptCharacters = await loadCharactersByScript(selectedScript);
 
-        // Filter out travellers and fabled if not included
+        // Filter out travellers if not included
         const filteredCharacters = scriptCharacters.filter((character) => {
           if (
             !includeTravellers &&
-            (character.type === "travellers" || character.type === "fabled")
+            character.type === "travellers"
           ) {
             return false;
           }
@@ -67,9 +108,12 @@ export const FlashcardGame: React.FC<FlashcardGameProps> = ({
         setAnsweredCharacters(new Set());
         setQuizCompleted(false);
         setScore({ correct: 0, total: 0 });
+        setPreloadedImages(new Set());
 
         if (shuffled.length > 0) {
           generateNextQuestion(filteredCharacters, shuffled);
+          // Start background preloading in the order questions will appear
+          startBackgroundPreloading(shuffled);
         }
       } catch (error) {
         console.error("Failed to load characters:", error);
@@ -111,6 +155,9 @@ export const FlashcardGame: React.FC<FlashcardGameProps> = ({
     setCurrentQuestion(question);
     setSelectedAnswer(null);
     setShowResult(false);
+
+    // Preload the current question's image immediately if not already preloaded
+    preloadSingleImage(nextCharacter);
   };
 
   const handleAnswerSelect = (answer: string) => {
@@ -141,9 +188,6 @@ export const FlashcardGame: React.FC<FlashcardGameProps> = ({
     }
   };
 
-  const getCharacterImagePath = (character: Character): string => {
-    return `/data/images/${character.icon}`;
-  };
 
   const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
     console.warn(`Failed to load image: ${e.currentTarget.src}`);
@@ -228,20 +272,35 @@ export const FlashcardGame: React.FC<FlashcardGameProps> = ({
       </div>
 
       <div className="flashcard">
-        <div className="character-info">
-          <div className="character-image-container">
-            <div className="character-image-background"></div>
-            <img
-              src={getCharacterImagePath(currentQuestion.character)}
-              alt={currentQuestion.character.name}
-              className="character-image"
-              onError={handleImageError}
-            />
+        {currentQuestion.type === 'ability-from-name' && (
+          <div className="character-info">
+            <div className="character-image-container">
+              <div className="character-image-background"></div>
+              <img
+                src={getCharacterImagePath(currentQuestion.character)}
+                alt={currentQuestion.character.name}
+                className="character-image"
+                onError={handleImageError}
+              />
+            </div>
+            <div className="character-details">
+              <h3 className="character-name">{currentQuestion.character.name}</h3>
+              <p className="character-type">{currentQuestion.character.type}</p>
+            </div>
           </div>
-          <div className="character-details">
-            <h3 className="character-name">{currentQuestion.character.name}</h3>
-            <p className="character-type">{currentQuestion.character.type}</p>
-          </div>
+        )}
+
+        <div className="question">
+          <h4>
+            {currentQuestion.type === 'ability-from-name' 
+              ? 'What is this character\'s ability?' 
+              : 'Which character has this ability?'}
+          </h4>
+          {currentQuestion.type === 'name-from-ability' && (
+            <div className="ability-text">
+              "{currentQuestion.character.ability}"
+            </div>
+          )}
         </div>
 
         <div className="options">
@@ -254,6 +313,33 @@ export const FlashcardGame: React.FC<FlashcardGameProps> = ({
               } else if (option === selectedAnswer) {
                 buttonClass += " incorrect";
               }
+            }
+
+            // For name-from-ability questions, show character icons
+            if (currentQuestion.type === 'name-from-ability') {
+              const character = characters.find(char => char.name === option);
+              
+              return (
+                <button
+                  key={index}
+                  className={`${buttonClass} option-with-icon`}
+                  onClick={() => handleAnswerSelect(option)}
+                  disabled={showResult}
+                >
+                  {character && (
+                    <div className="option-icon-container">
+                      <div className="option-icon-background"></div>
+                      <img
+                        src={getCharacterImagePath(character)}
+                        alt={character.name}
+                        className="option-icon"
+                        onError={handleImageError}
+                      />
+                    </div>
+                  )}
+                  <span className="option-text">{option}</span>
+                </button>
+              );
             }
 
             return (
