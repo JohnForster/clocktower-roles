@@ -1,0 +1,1 @@
+{"name": "Riot", "ability": "On day 3, Minions become Riot & nominees die but nominate an alive player immediately. This must happen.", "type": "demon", "icon": "riot.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "4a - Kickstarter Experimental"}

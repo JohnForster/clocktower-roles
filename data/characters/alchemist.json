@@ -1,0 +1,1 @@
+{"name": "Alchemist", "ability": "You have a Minion ability. When using this, the Storyteller may prompt you to choose differently.", "type": "townsfolk", "icon": "alchemist.png", "first_night": true, "other_nights": false, "reminders": ["IS THE ALCHEMIST"], "affects_setup": false, "home_script": "Kickstarter Experimental"}

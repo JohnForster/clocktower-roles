@@ -1,0 +1,11 @@
+{
+  "name": "Al-Hadikhia",
+  "ability": "Each night*, you may choose 3 players (all players learn who): each silently chooses to live or die, but if all live, all die.",
+  "type": "demon",
+  "icon": "alhadikhia.png",
+  "first_night": false,
+  "other_nights": true,
+  "reminders": ["1", "2", "3"],
+  "affects_setup": false,
+  "home_script": "Kickstarter Experimental"
+}

@@ -1,0 +1,1 @@
+{"name": "Goblin", "ability": "If you publicly claim to be the Goblin when nominated & are executed that day, your team wins.", "type": "minion", "icon": "goblin.png", "first_night": false, "other_nights": false, "reminders": ["CLAIMED"], "affects_setup": false, "home_script": "4b - Carousel Experimental"}

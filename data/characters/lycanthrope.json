@@ -1,0 +1,1 @@
+{"name": "Lycanthrope", "ability": "Each night*, choose an alive player. If good, they die & the Demon doesn\u2019t kill tonight. One good player registers as evil.", "type": "townsfolk", "icon": "lycanthrope.png", "first_night": false, "other_nights": true, "reminders": ["DEAD", "FAUX PAW"], "affects_setup": false, "home_script": "Kickstarter Experimental"}

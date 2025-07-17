@@ -1,0 +1,1 @@
+{"name": "Butler", "ability": "Each night, choose a player (not yourself): tomorrow, you may only vote if they are voting too.", "type": "outsider", "icon": "butler.png", "first_night": true, "other_nights": true, "reminders": ["MASTER"], "affects_setup": false, "home_script": "1 - Trouble Brewing"}

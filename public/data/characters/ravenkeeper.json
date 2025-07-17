@@ -1,0 +1,1 @@
+{"name": "Ravenkeeper", "ability": "If you die at night, you are woken to choose a player: you learn their character.", "type": "townsfolk", "icon": "ravenkeeper.png", "first_night": false, "other_nights": true, "reminders": [], "affects_setup": false, "home_script": "1 - Trouble Brewing"}

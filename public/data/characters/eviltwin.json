@@ -1,0 +1,1 @@
+{"name": "Evil Twin", "ability": "You & an opposing player know each other. If the good player is executed, evil wins. Good can't win if you both live.", "type": "minion", "icon": "eviltwin.png", "first_night": true, "other_nights": false, "reminders": ["TWIN"], "affects_setup": false, "home_script": "3 - Sects and Violets"}

@@ -1,0 +1,1 @@
+{"name": "Apprentice", "ability": "On your 1st night, you gain a Townsfolk ability (if good) or a Minion ability (if evil).", "type": "travellers", "icon": "apprentice.png", "first_night": true, "other_nights": false, "reminders": ["IS THE APPRENTICE"], "affects_setup": false, "home_script": "2 - Bad Moon Rising"}

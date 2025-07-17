@@ -1,0 +1,1 @@
+{"name": "Nightwatchman", "ability": "Once per game, at night, choose a player: they learn you are the Nightwatchman.", "type": "townsfolk", "icon": "nightwatchman.png", "first_night": true, "other_nights": true, "reminders": ["NO ABILITY"], "affects_setup": false, "home_script": "Carousel Experimental"}

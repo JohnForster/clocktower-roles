@@ -1,0 +1,1 @@
+{"name": "Seamstress", "ability": "Once per game, at night, choose 2 players (not yourself): you learn if they are the same alignment.", "type": "townsfolk", "icon": "seamstress.png", "first_night": true, "other_nights": true, "reminders": ["NO ABILITY"], "affects_setup": false, "home_script": "3 - Sects and Violets"}

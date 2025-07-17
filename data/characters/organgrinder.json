@@ -1,0 +1,1 @@
+{"name": "Organ Grinder", "ability": "All players keep their eyes closed when voting and the vote tally is secret. Each night, choose if you are drunk until dusk.", "type": "minion", "icon": "organgrinder.png", "first_night": true, "other_nights": true, "reminders": ["ABOUT TO DIE", "DRUNK"], "affects_setup": false, "home_script": "Carousel Experimental"}

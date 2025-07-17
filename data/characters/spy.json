@@ -1,0 +1,1 @@
+{"name": "Spy", "ability": "Each night, you see the Grimoire. You might register as good & as a Townsfolk or Outsider, even if dead.", "type": "minion", "icon": "spy.png", "first_night": true, "other_nights": true, "reminders": [], "affects_setup": false, "home_script": "Trouble Brewing"}

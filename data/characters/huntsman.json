@@ -1,0 +1,1 @@
+{"name": "Huntsman", "ability": "Once per game, at night, choose a living player: the Damsel, if chosen, becomes a not-in-play Townsfolk. [+the Damsel]", "type": "townsfolk", "icon": "huntsman.png", "first_night": true, "other_nights": true, "reminders": ["NO ABILITY"], "affects_setup": true, "home_script": "Kickstarter Experimental"}

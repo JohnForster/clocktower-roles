@@ -1,0 +1,1 @@
+{"name": "Tinker", "ability": "You might die at any time.", "type": "outsider", "icon": "tinker.png", "first_night": false, "other_nights": true, "reminders": ["DEAD"], "affects_setup": false, "home_script": "2 - Bad Moon Rising"}

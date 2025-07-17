@@ -1,0 +1,1 @@
+{"name": "Clockmaker", "ability": "You start knowing how many steps from the Demon to its nearest Minion.", "type": "townsfolk", "icon": "clockmaker.png", "first_night": true, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Sects and Violets"}

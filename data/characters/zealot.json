@@ -1,0 +1,1 @@
+{"name": "Zealot", "ability": "If there are 5 or more players alive, you must vote for every nomination.", "type": "outsider", "icon": "zealot.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Carousel Experimental"}

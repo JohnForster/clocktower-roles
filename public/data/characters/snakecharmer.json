@@ -1,0 +1,1 @@
+{"name": "Snake Charmer", "ability": "Each night, choose an alive player: a chosen Demon swaps characters & alignments with you & is then poisoned.", "type": "townsfolk", "icon": "snakecharmer.png", "first_night": true, "other_nights": true, "reminders": ["POISONED"], "affects_setup": false, "home_script": "3 - Sects and Violets"}

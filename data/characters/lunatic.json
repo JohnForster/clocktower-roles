@@ -1,0 +1,1 @@
+{"name": "Lunatic", "ability": "You think you are a Demon, but you are not. The Demon knows who you are & who you choose at night.", "type": "outsider", "icon": "lunatic.png", "first_night": true, "other_nights": true, "reminders": ["CHOSEN", "CHOSEN", "CHOSEN"], "affects_setup": false, "home_script": "Bad Moon Rising"}

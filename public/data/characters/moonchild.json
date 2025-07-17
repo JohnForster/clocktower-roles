@@ -1,0 +1,1 @@
+{"name": "Moonchild", "ability": "When you learn that you died, publicly choose 1 alive player. Tonight, if it was a good player, they die.", "type": "outsider", "icon": "moonchild.png", "first_night": false, "other_nights": true, "reminders": ["DEAD"], "affects_setup": false, "home_script": "2 - Bad Moon Rising"}

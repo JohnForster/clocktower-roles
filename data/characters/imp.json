@@ -1,0 +1,1 @@
+{"name": "Imp", "ability": "Each night*, choose a player: they die. If you kill yourself this way, a Minion becomes the Imp.", "type": "demon", "icon": "imp.png", "first_night": false, "other_nights": true, "reminders": ["DEAD"], "affects_setup": false, "home_script": "Trouble Brewing"}

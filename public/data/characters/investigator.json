@@ -1,0 +1,1 @@
+{"name": "Investigator", "ability": "You start knowing that 1 of 2 players is a particular Minion.", "type": "townsfolk", "icon": "investigator.png", "first_night": true, "other_nights": false, "reminders": ["WRONG", "MINION"], "affects_setup": false, "home_script": "1 - Trouble Brewing"}

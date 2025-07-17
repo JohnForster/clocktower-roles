@@ -1,0 +1,1 @@
+{"name": "Voudon", "ability": "Only you & the dead can vote. They don't need a vote token to do so. A 50% majority isn't required.", "type": "travellers", "icon": "voudon.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "2 - Bad Moon Rising"}

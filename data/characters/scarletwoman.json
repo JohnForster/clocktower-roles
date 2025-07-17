@@ -1,0 +1,1 @@
+{"name": "Scarlet Woman", "ability": "If there are 5 or more players alive & the Demon dies, you become the Demon. (Travellers don't count.)", "type": "minion", "icon": "scarletwoman.png", "first_night": false, "other_nights": true, "reminders": ["IS THE DEMON"], "affects_setup": false, "home_script": "Trouble Brewing"}

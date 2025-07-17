@@ -1,0 +1,1 @@
+{"name": "Ogre", "ability": "On your 1st night, choose a player (not yourself): you become their alignment (you don't know which) even if drunk or poisoned.\u201d", "type": "outsider", "icon": "ogre.png", "first_night": true, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "4b - Carousel Experimental"}

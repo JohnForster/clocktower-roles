@@ -1,0 +1,1 @@
+{"name": "Duchess", "ability": "Each day, 3 players may choose to visit you. At night*, each visitor learns how many visitors are evil, but 1 gets false info.", "type": "fabled", "icon": "duchess.png", "first_night": false, "other_nights": false, "reminders": ["FALSE INFO", "VISITOR", "VISITOR"], "affects_setup": false, "home_script": "Extras"}

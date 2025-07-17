@@ -1,0 +1,1 @@
+{"name": "Fortune Teller", "ability": "Each night, choose 2 players: you learn if either is a Demon. There is a good player that registers as a Demon to you.", "type": "townsfolk", "icon": "fortuneteller.png", "first_night": true, "other_nights": true, "reminders": ["RED HERRING"], "affects_setup": false, "home_script": "1 - Trouble Brewing"}

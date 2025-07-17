@@ -1,0 +1,1 @@
+{"name": "Widow", "ability": "On your 1st night, look at the Grimoire & choose a player: they are poisoned. 1 good player knows a Widow is in play.", "type": "minion", "icon": "widow.png", "first_night": true, "other_nights": false, "reminders": ["POISONED", "KNOWS"], "affects_setup": false, "home_script": "4b - Carousel Experimental"}

@@ -1,0 +1,1 @@
+{"name": "Sweetheart", "ability": "When you die, 1 player is drunk from now on.", "type": "outsider", "icon": "sweetheart.png", "first_night": false, "other_nights": true, "reminders": ["DRUNK"], "affects_setup": false, "home_script": "Sects and Violets"}

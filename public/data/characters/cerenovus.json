@@ -1,0 +1,1 @@
+{"name": "Cerenovus", "ability": "Each night, choose a player & a good character: they are 'mad' they are this character tomorrow, or might be executed.", "type": "minion", "icon": "cerenovus.png", "first_night": true, "other_nights": true, "reminders": ["MAD"], "affects_setup": false, "home_script": "3 - Sects and Violets"}

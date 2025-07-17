@@ -1,0 +1,1 @@
+{"name": "Plague Doctor", "ability": "When you die, the Storyteller gains a Minion ability.", "type": "outsider", "icon": "plaguedoctor.png", "first_night": false, "other_nights": false, "reminders": ["STORYTELLER ABILITY"], "affects_setup": false, "home_script": "4b - Carousel Experimental"}

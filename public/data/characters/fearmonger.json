@@ -1,0 +1,1 @@
+{"name": "Fearmonger", "ability": "Each night, choose a player: if you nominate & execute them, their team loses. All players know if you choose a new player.", "type": "minion", "icon": "fearmonger.png", "first_night": true, "other_nights": true, "reminders": ["FEAR"], "affects_setup": false, "home_script": "4a - Kickstarter Experimental"}

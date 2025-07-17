@@ -1,0 +1,1 @@
+{"name": "Pacifist", "ability": "Executed good players might not die.", "type": "townsfolk", "icon": "pacifist.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Bad Moon Rising"}

@@ -1,0 +1,1 @@
+{"name": "Oracle", "ability": "Each night*, you learn how many dead players are evil.", "type": "townsfolk", "icon": "oracle.png", "first_night": false, "other_nights": true, "reminders": [], "affects_setup": false, "home_script": "Sects and Violets"}

@@ -1,0 +1,1 @@
+{"name": "Buddhist", "ability": "For the first 2 minutes of each day, veteran players may not talk.", "type": "fabled", "icon": "buddhist.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Extras"}

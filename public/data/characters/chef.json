@@ -1,0 +1,1 @@
+{"name": "Chef", "ability": "You start knowing how many pairs of evil players there are.", "type": "townsfolk", "icon": "chef.png", "first_night": true, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "1 - Trouble Brewing"}

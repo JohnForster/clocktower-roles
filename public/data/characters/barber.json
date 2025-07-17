@@ -1,0 +1,1 @@
+{"name": "Barber", "ability": "If you died today or tonight, the Demon may choose 2 players (not another Demon) to swap characters.", "type": "outsider", "icon": "barber.png", "first_night": false, "other_nights": true, "reminders": ["HAIRCUTS TONIGHT"], "affects_setup": false, "home_script": "3 - Sects and Violets"}

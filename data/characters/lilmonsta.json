@@ -1,0 +1,1 @@
+{"name": "Lil' Monsta", "ability": "Each night, Minions choose who babysits Lil' Monsta & 'is the Demon'. Each night*, a player might die. [+1 Minion]", "type": "demon", "icon": "lilmonsta.png", "first_night": true, "other_nights": true, "reminders": ["Lil' Monsta", "DEAD"], "affects_setup": true, "home_script": "Carousel Experimental"}

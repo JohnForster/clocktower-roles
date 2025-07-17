@@ -1,0 +1,1 @@
+{"name": "Gambler", "ability": "Each night*, choose a player & guess their character: if you guess wrong, you die.", "type": "townsfolk", "icon": "gambler.png", "first_night": false, "other_nights": true, "reminders": ["DEAD"], "affects_setup": false, "home_script": "2 - Bad Moon Rising"}

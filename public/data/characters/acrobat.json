@@ -1,0 +1,11 @@
+{
+  "name": "Acrobat",
+  "ability": "Each night*, choose a player: if they are or become drunk or poisoned tonight, you die.",
+  "type": "townsfolk",
+  "icon": "acrobat.png",
+  "first_night": false,
+  "other_nights": true,
+  "reminders": ["DEAD", "CHOSEN"],
+  "affects_setup": false,
+  "home_script": "4b - Carousel Experimental"
+}

@@ -1,0 +1,1 @@
+{"name": "Summoner", "ability": "You get 3 bluffs. On the 3rd night, choose a player: they become an evil Demon of your choice. [No Demon]", "type": "minion", "icon": "summoner.png", "first_night": true, "other_nights": true, "reminders": ["NIGHT 1", "NIGHT 2", "NIGHT 3"], "affects_setup": true, "home_script": "Carousel Experimental"}

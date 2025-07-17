@@ -1,0 +1,1 @@
+{"name": "Gangster", "ability": "Once per day, you may choose to kill an alive neighbor, if your other alive neighbor agrees.", "type": "travellers", "icon": "gangster.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "4a - Kickstarter Experimental"}

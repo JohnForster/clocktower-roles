@@ -1,0 +1,1 @@
+{"name": "Toymaker", "ability": "The Demon may choose not to attack & must do this at least once per game. Evil players get normal starting info.", "type": "fabled", "icon": "toymaker.png", "first_night": false, "other_nights": false, "reminders": ["FINAL NIGHT: NO ATTACK"], "affects_setup": false, "home_script": "Extras"}

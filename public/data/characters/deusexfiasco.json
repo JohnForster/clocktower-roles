@@ -1,0 +1,1 @@
+{"name": "Deus ex Fiasco", "ability": "At least once per game, the Storyteller will make a mistake, correct it, and publicly admit to it.", "type": "fabled", "icon": "deusexfiasco.png", "first_night": false, "other_nights": false, "reminders": ["WHOOPSIE"], "affects_setup": false, "home_script": "Extras"}

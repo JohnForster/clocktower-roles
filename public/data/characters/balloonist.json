@@ -1,0 +1,1 @@
+{"name": "Balloonist", "ability": "Each night, you learn a player of a different character type than last night. [+0 or +1 Outsider]", "type": "townsfolk", "icon": "balloonist.png", "first_night": true, "other_nights": true, "reminders": ["KNOWN"], "affects_setup": true, "home_script": "4b - Carousel Experimental"}

@@ -1,0 +1,1 @@
+{"name": "Farmer", "ability": "When you die at night, an alive good player becomes a Farmer.", "type": "townsfolk", "icon": "farmer.png", "first_night": false, "other_nights": true, "reminders": [], "affects_setup": false, "home_script": "4a - Kickstarter Experimental"}

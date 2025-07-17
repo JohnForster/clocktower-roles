@@ -1,0 +1,1 @@
+{"name": "Cult Leader", "ability": "Each night, you become the alignment of an alive neighbor. If all good players choose to join your cult, your team wins.", "type": "townsfolk", "icon": "cultleader.png", "first_night": true, "other_nights": true, "reminders": [], "affects_setup": false, "home_script": "Carousel Experimental"}

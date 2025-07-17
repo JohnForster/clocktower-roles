@@ -1,0 +1,1 @@
+{"name": "Courtier", "ability": "Once per game, at night, choose a character: they are drunk for 3 nights & 3 days.", "type": "townsfolk", "icon": "courtier.png", "first_night": true, "other_nights": true, "reminders": ["DRUNK 1", "NO ABILITY", "DRUNK 3", "DRUNK 2"], "affects_setup": false, "home_script": "Bad Moon Rising"}

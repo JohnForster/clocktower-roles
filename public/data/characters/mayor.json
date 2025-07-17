@@ -1,0 +1,1 @@
+{"name": "Mayor", "ability": "If only 3 players live & no execution occurs, your team wins. If you die at night, another player might die instead.", "type": "townsfolk", "icon": "mayor.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "1 - Trouble Brewing"}
