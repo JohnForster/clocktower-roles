@@ -76,16 +76,20 @@ function generateModifiedAbility(ability: string): string {
 
 export function generateFlashcardQuestion(
   targetCharacter: Character,
-  allCharacters: Character[]
+  scriptCharacters: Character[],
+  allCharacters?: Character[]
 ): FlashcardQuestion {
   // Randomly choose question type
   const questionType =
     Math.random() < 0.5 ? "ability-from-name" : "name-from-ability";
 
   if (questionType === "ability-from-name") {
-    return generateAbilityFromNameQuestion(targetCharacter, allCharacters);
+    // For ability-from-name questions, use all characters if available, otherwise fall back to script characters
+    const charactersForIncorrectAnswers = allCharacters || scriptCharacters;
+    return generateAbilityFromNameQuestion(targetCharacter, charactersForIncorrectAnswers);
   } else {
-    return generateNameFromAbilityQuestion(targetCharacter, allCharacters);
+    // For name-from-ability questions, use only script characters to maintain difficulty balance
+    return generateNameFromAbilityQuestion(targetCharacter, scriptCharacters);
   }
 }
 
@@ -93,10 +97,15 @@ function generateAbilityFromNameQuestion(
   targetCharacter: Character,
   allCharacters: Character[]
 ): FlashcardQuestion {
+  // Filter to same type characters for wrong answers
+  const sameTypeCharacters = allCharacters.filter(
+    (char) => char.type === targetCharacter.type && char.name !== targetCharacter.name
+  );
+  
   // Find similar characters for wrong answers
   const similarCharacters = findSimilarCharacters(
     targetCharacter,
-    allCharacters,
+    sameTypeCharacters,
     3
   );
 
@@ -106,14 +115,17 @@ function generateAbilityFromNameQuestion(
 
   // Add abilities from similar characters (avoid duplicates)
   similarCharacters.forEach((char) => {
-    if (!usedAbilities.has(char.ability) && options.length < 4) {
+    if (options.length < 4) {
       // Replace the incorrect character's name with the target character's name
       const modifiedAbility = replaceOwnNameInAbility(
         char.ability,
         char.name
       ).replace(/<This Character>/g, targetCharacter.name);
-      options.push(modifiedAbility);
-      usedAbilities.add(modifiedAbility);
+      
+      if (!usedAbilities.has(modifiedAbility)) {
+        options.push(modifiedAbility);
+        usedAbilities.add(modifiedAbility);
+      }
     }
   });
 
@@ -127,26 +139,52 @@ function generateAbilityFromNameQuestion(
       // If we can't generate a unique modified ability, find more characters
       const additionalCharacters = findSimilarCharacters(
         targetCharacter,
-        allCharacters,
+        sameTypeCharacters,
         10
       );
       let added = false;
 
       for (const char of additionalCharacters) {
-        if (!usedAbilities.has(char.ability) && options.length < 4) {
+        if (options.length < 4) {
           // Replace the incorrect character's name with the target character's name
           const modifiedAbility = replaceOwnNameInAbility(
             char.ability,
             char.name
           ).replace(/<This Character>/g, targetCharacter.name);
-          options.push(modifiedAbility);
-          usedAbilities.add(modifiedAbility);
-          added = true;
-          break;
+          
+          if (!usedAbilities.has(modifiedAbility)) {
+            options.push(modifiedAbility);
+            usedAbilities.add(modifiedAbility);
+            added = true;
+            break;
+          }
         }
       }
 
-      if (!added) break; // Prevent infinite loop
+      if (!added) {
+        // Last resort: try random characters from the same type
+        const randomCharacters = [...sameTypeCharacters]
+          .sort(() => Math.random() - 0.5)
+          .slice(0, 20);
+        
+        for (const char of randomCharacters) {
+          if (options.length < 4) {
+            const modifiedAbility = replaceOwnNameInAbility(
+              char.ability,
+              char.name
+            ).replace(/<This Character>/g, targetCharacter.name);
+            
+            if (!usedAbilities.has(modifiedAbility)) {
+              options.push(modifiedAbility);
+              usedAbilities.add(modifiedAbility);
+              added = true;
+              break;
+            }
+          }
+        }
+        
+        if (!added) break; // Prevent infinite loop
+      }
     }
   }
 
@@ -234,10 +272,11 @@ function generateNameFromAbilityQuestion(
 }
 
 export function generateQuestionsFromCharacters(
-  characters: Character[]
+  characters: Character[],
+  allCharacters?: Character[]
 ): FlashcardQuestion[] {
   return characters.map((character) =>
-    generateFlashcardQuestion(character, characters)
+    generateFlashcardQuestion(character, characters, allCharacters)
   );
 }
 

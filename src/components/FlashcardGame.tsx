@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Character, FlashcardQuestion } from "../types/character";
-import { loadCharactersByScript, getCharacterImagePath } from "../utils/dataLoader";
+import { loadCharactersByScript, loadAllCharacters, getCharacterImagePath } from "../utils/dataLoader";
 import { generateFlashcardQuestion } from "../utils/questionGenerator";
 import { useProgress } from "../hooks/useProgress";
 
@@ -16,6 +16,7 @@ export const FlashcardGame: React.FC<FlashcardGameProps> = ({
   onReturnToSelection,
 }) => {
   const [characters, setCharacters] = useState<Character[]>([]);
+  const [allCharacters, setAllCharacters] = useState<Character[]>([]);
   const [currentQuestion, setCurrentQuestion] =
     useState<FlashcardQuestion | null>(null);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
@@ -85,7 +86,12 @@ export const FlashcardGame: React.FC<FlashcardGameProps> = ({
     const loadCharacters = async () => {
       try {
         setLoading(true);
-        const scriptCharacters = await loadCharactersByScript(selectedScript);
+        
+        // Load both script characters and all characters
+        const [scriptCharacters, allCharacters] = await Promise.all([
+          loadCharactersByScript(selectedScript),
+          loadAllCharacters()
+        ]);
 
         // Filter out travellers if not included
         const filteredCharacters = scriptCharacters.filter((character) => {
@@ -99,6 +105,7 @@ export const FlashcardGame: React.FC<FlashcardGameProps> = ({
         });
 
         setCharacters(filteredCharacters);
+        setAllCharacters(allCharacters);
 
         // Shuffle characters for randomized quiz order
         const shuffled = shuffleArray(filteredCharacters);
@@ -150,7 +157,8 @@ export const FlashcardGame: React.FC<FlashcardGameProps> = ({
 
     const question = generateFlashcardQuestion(
       nextCharacter,
-      availableCharacters
+      availableCharacters,
+      allCharacters
     );
     setCurrentQuestion(question);
     setSelectedAnswer(null);
