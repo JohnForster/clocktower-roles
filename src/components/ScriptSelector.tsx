@@ -34,6 +34,15 @@ export const ScriptSelector: React.FC<ScriptSelectorProps> = ({
     loadScripts();
   }, []);
 
+  // Handle script selection changes
+  const handleScriptSelect = (script: string) => {
+    onScriptSelect(script);
+    // Auto-enable travellers when Travellers script is selected
+    if (script === "Travellers") {
+      onToggleTravellers(true);
+    }
+  };
+
   // Focus on the main scripts you mentioned
   const priorityScripts = [
     "Trouble Brewing",
@@ -46,8 +55,9 @@ export const ScriptSelector: React.FC<ScriptSelectorProps> = ({
   const orderedScripts = [
     ...priorityScripts.filter((script) => scripts.includes(script)),
     ...scripts.filter(
-      (script) => !priorityScripts.includes(script) && script !== "All"
+      (script) => !priorityScripts.includes(script) && script !== "Travellers" && script !== "All"
     ),
+    "Travellers", // Add Travellers before "All"
     "All", // Always put "All" at the end
   ].filter((script) => scripts.includes(script));
 
@@ -61,7 +71,7 @@ export const ScriptSelector: React.FC<ScriptSelectorProps> = ({
       <div className="script-options">
         <select
           value={selectedScript || ""}
-          onChange={(e) => onScriptSelect(e.target.value)}
+          onChange={(e) => handleScriptSelect(e.target.value)}
           className="script-dropdown"
         >
           <option value="">Choose a script...</option>
@@ -79,6 +89,7 @@ export const ScriptSelector: React.FC<ScriptSelectorProps> = ({
               checked={includeTravellers}
               onChange={(e) => onToggleTravellers(e.target.checked)}
               className="traveller-checkbox"
+              disabled={selectedScript === "Travellers"}
             />
             Include Travellers
           </label>

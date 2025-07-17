@@ -29,6 +29,12 @@ export async function loadCharactersByScript(
     );
   }
   
+  if (scriptName === "Travellers") {
+    return allCharacters.filter(
+      (character) => character.type === "travellers"
+    );
+  }
+  
   if (scriptName === "All") {
     return allCharacters;
   }
@@ -50,6 +56,7 @@ export async function getAvailableScripts(): Promise<string[]> {
   
   // Add special script combinations
   scripts.unshift("Base 3");
+  scripts.push("Travellers");
   scripts.push("All");
 
   return scripts;
