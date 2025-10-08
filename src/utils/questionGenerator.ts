@@ -21,6 +21,7 @@ function findSimilarCharacters(
   count: number
 ): Character[] {
   const similarities = allCharacters
+    .filter((char) => char.type === targetCharacter.type)
     .filter((char) => char.name !== targetCharacter.name)
     .map((char) => ({
       character: char,
@@ -37,8 +38,8 @@ function replaceOwnNameInAbility(
   characterName: string
 ): string {
   // Use word boundaries to match whole words only
-  const regex = new RegExp(`\\b${characterName}\\b`, "gi");
-  return ability.replace(regex, "<This Character>");
+  const regex = new RegExp(`\\b${characterName}(s?)\\b`, "gi");
+  return ability.replace(regex, "<This Character>$1");
 }
 
 // Function to generate slightly modified versions of an ability
