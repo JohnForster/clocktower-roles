@@ -1,0 +1,1 @@
+{"name": "Hwisp", "ability": "Each night*, choose a player: they die. If nominated by a\n              Townsfolk, you die. 2nd Townsfolk to nominate in a day's, team\n              loses.", "type": "demon", "icon": "hwisp.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

@@ -1,0 +1,1 @@
+{"name": "Tipi-Tipi", "ability": "Each night*, a player dies. On the final night, choose a player.\n              They are \"mad\" that you are not the demon or their team loses.", "type": "demon", "icon": "tipi_tipi.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

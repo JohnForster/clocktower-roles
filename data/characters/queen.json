@@ -1,0 +1,1 @@
+{"name": "Queen", "ability": "If both of your neighbours are good, they learn who you are.\n              Anyone mad about a Queen being in-play might be executed.", "type": "townsfolk", "icon": "queen.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

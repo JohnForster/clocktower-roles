@@ -1,0 +1,1 @@
+{"name": "Quack", "ability": "Each night, choose 2 living players: abilities that target one,\n              target the other instead. The demon cannot die this way.", "type": "townsfolk", "icon": "quack.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

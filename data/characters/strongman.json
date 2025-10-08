@@ -1,0 +1,1 @@
+{"name": "Strongman", "ability": "If you were the most mad about being the Strongman today & a\n              player chose you tonight for any reason, they die.", "type": "townsfolk", "icon": "strongman.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

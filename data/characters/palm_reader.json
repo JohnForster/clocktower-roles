@@ -1,0 +1,1 @@
+{"name": "Palm Reader", "ability": "The Demon attacks one night before it takes effect, even if you\n              are dead. Each night, learn who was attacked.", "type": "townsfolk", "icon": "palm_reader.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

@@ -1,0 +1,1 @@
+{"name": "Patron", "ability": "Jinxed characters may not both be in-play. Evil players know which\n              not-in-play characters are jinxed.", "type": "fabled", "icon": "patron.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

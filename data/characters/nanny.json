@@ -1,0 +1,1 @@
+{"name": "Nanny", "ability": "At night, other players with both hands over their eyes cannot\n              die, but if you die, they might die too.", "type": "townsfolk", "icon": "nanny.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

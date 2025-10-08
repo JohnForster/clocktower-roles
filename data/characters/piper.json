@@ -1,0 +1,1 @@
+{"name": "Piper", "ability": "Once per game, publicly choose that from now on: Minions can\n              privately choose to turn good but the next executee's team loses.", "type": "townsfolk", "icon": "piper.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

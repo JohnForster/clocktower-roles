@@ -1,0 +1,1 @@
+{"name": "Merchant", "ability": "You & any other player may choose to make a deal. Until a new\n              deal is made, if a player breaks the deal, 1 of you dies.", "type": "townsfolk", "icon": "merchant.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

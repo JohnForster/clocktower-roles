@@ -1,0 +1,1 @@
+{"name": "Copycat", "ability": "You have the ability of an in-play Minion. If no others exist, you\n              start by choosing a Minion: gain their ability.", "type": "minion", "icon": "copycat.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

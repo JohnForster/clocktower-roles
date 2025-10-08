@@ -1,0 +1,1 @@
+{"name": "Queen of Lies", "ability": "Each night* choose 3 players to dupe: each chooses a different\n              alive player, 2 of which die. All players learn who you duped.", "type": "demon", "icon": "queen_of_lies.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

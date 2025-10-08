@@ -1,0 +1,1 @@
+{"name": "Zodion", "ability": "You start knowing all not-in-play characters. Each night*, the\n              highest character on the script dies.", "type": "demon", "icon": "zodion.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

@@ -1,0 +1,1 @@
+{"name": "Vat Dweller", "ability": "On your 1st night, choose an Outsider. Every Outsider is a copy of\n              that Outsider. [-? to +? Outsiders]", "type": "minion", "icon": "vat_dweller.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

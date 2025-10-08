@@ -1,0 +1,1 @@
+{"name": "Diplomat", "ability": "You start knowing which players are minions. If a minion you know\n              is executed, your team loses, even if dead.", "type": "townsfolk", "icon": "diplomat.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

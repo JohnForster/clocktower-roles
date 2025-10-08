@@ -1,0 +1,1 @@
+{"name": "Messenger", "ability": "On the final night, even if you are dead, choose a player: they\n              learn something. At any time, you may request what.", "type": "townsfolk", "icon": "messenger.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

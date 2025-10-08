@@ -1,0 +1,1 @@
+{"name": "Senator", "ability": "Players can only nominate their living neighbors, even if you are\n              dead.", "type": "minion", "icon": "senator.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

@@ -1,0 +1,1 @@
+{"name": "Skinkulus", "ability": "Each night*, choose a player: they die. If all differ in gender to\n              you they turn evil & may not vote (even if you lose this\n              ability).", "type": "demon", "icon": "skinkulus.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

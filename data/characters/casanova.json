@@ -1,0 +1,1 @@
+{"name": "Casanova", "ability": "Each night, choose an alive player (not yourself). If they're an\n              ally & executed tomorrow your team loses.", "type": "outsider", "icon": "casanova.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

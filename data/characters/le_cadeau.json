@@ -1,0 +1,1 @@
+{"name": "Le Cadeau", "ability": "Each night*, choose a player: they die. The 1st Townsfolk to\n              nominate you becomes an evil Le Cadeau & you die tonight.", "type": "demon", "icon": "le_cadeau.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

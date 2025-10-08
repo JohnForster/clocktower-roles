@@ -1,0 +1,1 @@
+{"name": "Familiar", "ability": "Each night*, you wake with the Demon and choose a player: they\n              die. If you die, the demon loses its ability.", "type": "minion", "icon": "familiar.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

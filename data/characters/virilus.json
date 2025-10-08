@@ -1,0 +1,1 @@
+{"name": "Virilus", "ability": "Each night, choose a player to infect. Infected who nominate die\n              & infect the nominee. After day 4, evil wins.", "type": "demon", "icon": "virilus.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

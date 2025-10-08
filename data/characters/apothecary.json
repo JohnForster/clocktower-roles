@@ -1,0 +1,1 @@
+{"name": "Apothecary", "ability": "Once per game, publicly change one game rule, if the Storyteller\n              agrees.", "type": "townsfolk", "icon": "apothecary.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

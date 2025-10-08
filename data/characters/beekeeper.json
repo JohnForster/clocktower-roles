@@ -1,0 +1,1 @@
+{"name": "Beekeeper", "ability": "One evil player registers as good and as a Townsfolk or Outsider.\n              If you publicly guess who it is (once per game), your team wins.", "type": "townsfolk", "icon": "beekeeper.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

@@ -1,0 +1,1 @@
+{"name": "Nun", "ability": "Other good players cannot be drunk, poisoned or get false info.", "type": "townsfolk", "icon": "nun.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

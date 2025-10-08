@@ -1,0 +1,1 @@
+{"name": "Druid", "ability": "Each day, you may publicly choose a player. If either of you die\n              tonight, an alive minion dies instead, if possible.", "type": "townsfolk", "icon": "druid.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

@@ -1,0 +1,1 @@
+{"name": "Scholar", "ability": "You start knowing which evil characters are in-play.", "type": "townsfolk", "icon": "scholar.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

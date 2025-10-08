@@ -1,0 +1,1 @@
+{"name": "Houndskeeper", "ability": "Each night, you learn how many steps to the nearest living player\n              targeted by an evil ability tonight.", "type": "townsfolk", "icon": "houndskeeper.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

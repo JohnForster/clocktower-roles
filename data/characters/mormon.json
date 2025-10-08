@@ -1,0 +1,1 @@
+{"name": "Mormon", "ability": "Each day, if 1 of your living neighbours publicly agrees, they\n              become a Mormon. If not, lose your ability.", "type": "townsfolk", "icon": "mormon.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

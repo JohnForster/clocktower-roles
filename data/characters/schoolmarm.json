@@ -1,0 +1,1 @@
+{"name": "Schoolmarm", "ability": "Players who turn evil learn you are in play and may choose to\n              remain good. [1 evil-creating character is in-play]", "type": "townsfolk", "icon": "schoolmarm.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

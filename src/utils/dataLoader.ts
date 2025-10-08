@@ -15,45 +15,55 @@ export async function loadAllCharacters(): Promise<Character[]> {
 }
 
 export async function loadCharactersByScript(
-  scriptName: string
+  scriptName: string,
+  includeUnreleased: boolean = false
 ): Promise<Character[]> {
   const allCharacters = await loadAllCharacters();
-  
+
+  // Filter out unreleased characters unless explicitly included
+  const filteredCharacters = includeUnreleased
+    ? allCharacters
+    : allCharacters.filter((character) => character.home_script !== "Unreleased");
+
   // Handle special script combinations
   if (scriptName === "Base 3") {
-    return allCharacters.filter(
-      (character) => 
+    return filteredCharacters.filter(
+      (character) =>
         character.home_script === "Trouble Brewing" ||
         character.home_script === "Bad Moon Rising" ||
         character.home_script === "Sects and Violets"
     );
   }
-  
+
   if (scriptName === "Travellers") {
-    return allCharacters.filter(
+    return filteredCharacters.filter(
       (character) => character.type === "travellers"
     );
   }
-  
+
   if (scriptName === "All") {
-    return allCharacters;
+    return filteredCharacters;
   }
-  
-  return allCharacters.filter(
+
+  return filteredCharacters.filter(
     (character) => character.home_script === scriptName
   );
 }
 
-export async function getAvailableScripts(): Promise<string[]> {
+export async function getAvailableScripts(includeUnreleased: boolean = false): Promise<string[]> {
   const allCharacters = await loadAllCharacters();
   const scriptNames = new Set<string>();
 
   allCharacters.forEach((character) => {
+    // Skip unreleased characters unless unlocked
+    if (!includeUnreleased && character.home_script === "Unreleased") {
+      return;
+    }
     scriptNames.add(character.home_script);
   });
 
   const scripts = Array.from(scriptNames).sort();
-  
+
   // Add special script combinations
   scripts.unshift("Base 3");
   scripts.push("Travellers");

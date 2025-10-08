@@ -1,0 +1,1 @@
+{"name": "Thespian", "ability": "Each day, an evil player must be \"mad\" about something or they\n              die. Each day, you must be \"mad\" about something or you die.", "type": "townsfolk", "icon": "thespian.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

@@ -1,0 +1,1 @@
+{"name": "Witch Hunter", "ability": "Each night, choose a player: you learn their alignment. If they\n              are not executed tomorrow, they turn evil. You can not be evil.", "type": "townsfolk", "icon": "witch_hunter.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

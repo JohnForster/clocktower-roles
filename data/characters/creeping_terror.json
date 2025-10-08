@@ -1,0 +1,1 @@
+{"name": "Creeping Terror", "ability": "Each night*, mark up to 3 players or kill all marked players.\n              Marked players learn that they are marked.", "type": "demon", "icon": "creeping_terror.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

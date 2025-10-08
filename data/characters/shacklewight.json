@@ -1,0 +1,1 @@
+{"name": "Shacklewight", "ability": "Each night, choose any players: they all wake together. Tomorrow\n              day, if 1 dies, they all die. Each day, if no-one dies, evil wins.", "type": "demon", "icon": "shacklewight.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

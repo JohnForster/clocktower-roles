@@ -1,0 +1,1 @@
+{"name": "Klaun", "ability": "Each night, choose up to 3 players. They are told that they are\n              mad in some way, but are not.", "type": "minion", "icon": "klaun.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

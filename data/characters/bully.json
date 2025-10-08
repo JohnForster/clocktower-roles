@@ -1,0 +1,1 @@
+{"name": "Bully", "ability": "Any players who vote differently to you might die.", "type": "outsider", "icon": "bully.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

@@ -1,0 +1,1 @@
+{"name": "Bodyguard", "ability": "Once per game, at night, choose a character (not the Bodyguard):\n              they are not affected in any way by evil abilities.", "type": "townsfolk", "icon": "bodyguard.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

@@ -1,0 +1,1 @@
+{"name": "Daughter of Nox", "ability": "Good’s info is reversed. The 1st time each player names you: lose\n              your ability (if they are good), regain it (if they are evil).", "type": "minion", "icon": "daughter_of_nox.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

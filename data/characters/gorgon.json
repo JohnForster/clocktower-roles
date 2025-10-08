@@ -1,0 +1,1 @@
+{"name": "Gorgon", "ability": "Each night, choose a player: if they leave their seat tomorrow,\n              they die. Lose this ability when 3 or fewer players live.", "type": "minion", "icon": "gorgon.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

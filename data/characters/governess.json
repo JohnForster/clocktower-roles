@@ -1,0 +1,1 @@
+{"name": "Governess", "ability": "You start knowing one character type of the closest non-Townsfolk\n              (not including Travellers).", "type": "townsfolk", "icon": "governess.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

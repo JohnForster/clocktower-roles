@@ -1,0 +1,1 @@
+{"name": "Mole", "ability": "You are a minion & register as evil. If the Demon publicly\n              guesses you (once), your team loses, even if dead, drunk or\n              poisoned.", "type": "townsfolk", "icon": "mole.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

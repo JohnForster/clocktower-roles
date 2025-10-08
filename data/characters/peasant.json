@@ -1,0 +1,1 @@
+{"name": "Peasant", "ability": "If you lose, you are the Peasant in the next game.", "type": "outsider", "icon": "peasant.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

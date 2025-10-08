@@ -1,0 +1,1 @@
+{"name": "Patient", "ability": "Once per game, at night, you wake: choose an in-play character to\n              gain ability for each night you were asleep.", "type": "townsfolk", "icon": "patient.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

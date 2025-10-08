@@ -1,0 +1,1 @@
+{"name": "Lion Tamer", "ability": "If either of your alive neighbours died by execution today, all\n              players are safe from the Demon tonight.", "type": "townsfolk", "icon": "lion_tamer.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

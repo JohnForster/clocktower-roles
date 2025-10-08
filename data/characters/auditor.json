@@ -1,0 +1,1 @@
+{"name": "Auditor", "ability": "You start knowing how many players have abilities affecting set\n              up. [No default Outsiders]", "type": "townsfolk", "icon": "auditor.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

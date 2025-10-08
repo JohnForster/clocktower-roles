@@ -1,0 +1,1 @@
+{"name": "Hangman", "ability": "Once per game, choose a player. Going clockwise, good players that\n              do not publicly state their character in 3 seconds, die.", "type": "townsfolk", "icon": "hangman.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

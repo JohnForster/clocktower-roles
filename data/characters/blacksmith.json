@@ -1,0 +1,1 @@
+{"name": "Blacksmith", "ability": "You start knowing how many outsiders are in play. All outsiders\n              are drunk, even if you are dead. [+1 Outsider]", "type": "townsfolk", "icon": "blacksmith.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

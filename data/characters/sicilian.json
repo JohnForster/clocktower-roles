@@ -1,0 +1,1 @@
+{"name": "Sicilian", "ability": "When nominations are called, if you publicly choose a player (not\n              yourself) & they are not executed today, their team wins.", "type": "minion", "icon": "sicilian.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

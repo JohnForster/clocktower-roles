@@ -1,0 +1,1 @@
+{"name": "Machinist", "ability": "On your 1st day, you may visit the Storyteller to gain the ability\n              of a non-listed character, even if drunk or poisoned.", "type": "townsfolk", "icon": "machinist.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

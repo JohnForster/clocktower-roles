@@ -1,0 +1,1 @@
+{"name": "Imposter", "ability": "You poison and gain the ability of the 1st in-play character that\n              you are mad about being each day.", "type": "minion", "icon": "imposter.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

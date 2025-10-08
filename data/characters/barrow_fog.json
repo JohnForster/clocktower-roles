@@ -1,0 +1,1 @@
+{"name": "Barrow-Fog", "ability": "Each night*, choose a player: they die. Players killed by the\n              Barrow-Fog register as alive during the day.", "type": "demon", "icon": "barrow_fog.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

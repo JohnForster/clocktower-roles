@@ -8,12 +8,14 @@ interface FlashcardGameProps {
   selectedScript: string;
   includeTravellers: boolean;
   onReturnToSelection: () => void;
+  unreleasedUnlocked: boolean;
 }
 
 export const FlashcardGame: React.FC<FlashcardGameProps> = ({
   selectedScript,
   includeTravellers,
   onReturnToSelection,
+  unreleasedUnlocked,
 }) => {
   const [characters, setCharacters] = useState<Character[]>([]);
   const [currentQuestion, setCurrentQuestion] =
@@ -85,7 +87,7 @@ export const FlashcardGame: React.FC<FlashcardGameProps> = ({
     const loadCharacters = async () => {
       try {
         setLoading(true);
-        const scriptCharacters = await loadCharactersByScript(selectedScript);
+        const scriptCharacters = await loadCharactersByScript(selectedScript, unreleasedUnlocked);
 
         // Filter out travellers if not included
         const filteredCharacters = scriptCharacters.filter((character) => {
@@ -123,7 +125,7 @@ export const FlashcardGame: React.FC<FlashcardGameProps> = ({
     };
 
     loadCharacters();
-  }, [selectedScript, includeTravellers]);
+  }, [selectedScript, includeTravellers, unreleasedUnlocked]);
 
   const generateNextQuestion = (
     availableCharacters: Character[],

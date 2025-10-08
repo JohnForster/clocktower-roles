@@ -1,0 +1,1 @@
+{"name": "Genius", "ability": "Each night, choose a good character: you have that ability until\n              you choose again. You are drunk every other night.", "type": "townsfolk", "icon": "genius.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

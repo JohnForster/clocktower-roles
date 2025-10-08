@@ -1,0 +1,1 @@
+{"name": "Stableboy", "ability": "Each night, learn 1 in-play character.", "type": "townsfolk", "icon": "stableboy.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

@@ -1,0 +1,1 @@
+{"name": "Matchmaker", "ability": "Each day, privately choose 2 players: you learn if they're\n              connected by an active ability.", "type": "townsfolk", "icon": "matchmaker.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

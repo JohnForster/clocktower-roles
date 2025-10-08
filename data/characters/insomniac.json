@@ -1,0 +1,1 @@
+{"name": "Insomniac", "ability": "Each night*, learn a character that died tonight.", "type": "townsfolk", "icon": "insomniac.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

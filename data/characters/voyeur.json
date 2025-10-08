@@ -1,0 +1,1 @@
+{"name": "Voyeur", "ability": "Each night*, choose a player (not yourself): if they die tonight,\n              all players learn who you are.", "type": "townsfolk", "icon": "voyeur.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

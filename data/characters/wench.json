@@ -1,0 +1,1 @@
+{"name": "Wench", "ability": "Each night, you learn a player. They are drunk until dusk and any\n              information they receive is false.", "type": "townsfolk", "icon": "wench.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

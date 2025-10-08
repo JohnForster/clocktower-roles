@@ -1,0 +1,1 @@
+{"name": "Dolomite", "ability": "Each night*, choose a player: they turn evil & learn who you\n              are. Once per game, you lose this ability. [No Minions]", "type": "demon", "icon": "dolomite.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

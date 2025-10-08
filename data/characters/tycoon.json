@@ -1,0 +1,1 @@
+{"name": "Tycoon", "ability": "1 player that you have shaken hands with might be drunk. Each\n              night*, learn if you shook hands with an evil player today.", "type": "townsfolk", "icon": "tycoon.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

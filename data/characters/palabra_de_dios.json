@@ -1,0 +1,1 @@
+{"name": "Palabra de Dios", "ability": "Each night*, each alive good player that raised a hand at dusk,\n              kills a random player. If none did, evil wins.", "type": "demon", "icon": "palabra_de_dios.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

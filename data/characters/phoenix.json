@@ -1,0 +1,1 @@
+{"name": "Phoenix", "ability": "On final day, if dead, you are raised as a not-in-play townsfolk.", "type": "townsfolk", "icon": "phoenix.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

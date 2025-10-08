@@ -1,0 +1,1 @@
+{"name": "Scavenger", "ability": "If both your neighbors die, something good happens.", "type": "townsfolk", "icon": "scavenger.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

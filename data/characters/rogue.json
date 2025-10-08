@@ -1,0 +1,1 @@
+{"name": "Rogue", "ability": "You may choose to break any rules when alive. If the Storyteller\n              finds out, even if dead, something bad might happen.", "type": "townsfolk", "icon": "rogue.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

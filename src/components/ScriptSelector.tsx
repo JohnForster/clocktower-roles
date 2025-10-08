@@ -7,6 +7,7 @@ interface ScriptSelectorProps {
   includeTravellers: boolean;
   onToggleTravellers: (include: boolean) => void;
   onContinue: () => void;
+  unreleasedUnlocked: boolean;
 }
 
 export const ScriptSelector: React.FC<ScriptSelectorProps> = ({
@@ -15,6 +16,7 @@ export const ScriptSelector: React.FC<ScriptSelectorProps> = ({
   includeTravellers,
   onToggleTravellers,
   onContinue,
+  unreleasedUnlocked,
 }) => {
   const [scripts, setScripts] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
@@ -22,7 +24,7 @@ export const ScriptSelector: React.FC<ScriptSelectorProps> = ({
   useEffect(() => {
     const loadScripts = async () => {
       try {
-        const availableScripts = await getAvailableScripts();
+        const availableScripts = await getAvailableScripts(unreleasedUnlocked);
         setScripts(availableScripts);
       } catch (error) {
         console.error("Failed to load scripts:", error);
@@ -32,7 +34,7 @@ export const ScriptSelector: React.FC<ScriptSelectorProps> = ({
     };
 
     loadScripts();
-  }, []);
+  }, [unreleasedUnlocked]);
 
   // Handle script selection changes
   const handleScriptSelect = (script: string) => {

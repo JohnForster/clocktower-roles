@@ -1,0 +1,1 @@
+{"name": "Bon Vivant", "ability": "Your alive neighbouring players are drunk (not including\n              Travelers).", "type": "townsfolk", "icon": "bon_vivant.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

@@ -1,0 +1,1 @@
+{"name": "Moneylender", "ability": "Each night, choose an alive player (not yourself): you become\n              their alignment.", "type": "townsfolk", "icon": "moneylender.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

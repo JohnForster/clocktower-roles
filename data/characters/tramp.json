@@ -1,0 +1,1 @@
+{"name": "Tramp", "ability": "If there are any votes to execute you, you might be executed\n              immediately.", "type": "outsider", "icon": "tramp.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

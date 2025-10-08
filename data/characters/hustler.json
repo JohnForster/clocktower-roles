@@ -1,0 +1,1 @@
+{"name": "Hustler", "ability": "Each night*, learn the character that nominated you today. If you\n              are \"mad\" about being the hustler, you receive false info.", "type": "townsfolk", "icon": "hustler.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

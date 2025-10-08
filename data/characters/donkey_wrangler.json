@@ -1,0 +1,1 @@
+{"name": "Donkey Wrangler", "ability": "If you are nominated and the demon is not executed, your team\n              loses. [Your token is square]", "type": "outsider", "icon": "donkey_wrangler.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

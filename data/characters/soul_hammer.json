@@ -1,0 +1,1 @@
+{"name": "Soul Hammer", "ability": "Each night*, choose a player: they die. After the final night, the\n              dead may not talk to the living.", "type": "demon", "icon": "soul_hammer.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

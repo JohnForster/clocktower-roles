@@ -1,0 +1,11 @@
+{
+  "name": "Amaniti",
+  "ability": "Your neighbours falsely register to good players' abilities.",
+  "type": "minion",
+  "icon": "amaniti.png",
+  "first_night": false,
+  "other_nights": false,
+  "reminders": [],
+  "affects_setup": false,
+  "home_script": "Unreleased"
+}

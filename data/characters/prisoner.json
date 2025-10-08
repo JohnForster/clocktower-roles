@@ -1,0 +1,1 @@
+{"name": "Prisoner", "ability": "You cannot vote. You start knowing 1 not-in-play character. If\n              most players vote to free you, you become that character and that\n              character's alignment.", "type": "outsider", "icon": "prisoner.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

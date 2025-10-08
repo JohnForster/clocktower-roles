@@ -1,0 +1,1 @@
+{"name": "Charlatan", "ability": "At night, you become the alignment of the 1st player to be\n              executed this game.", "type": "outsider", "icon": "charlatan.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

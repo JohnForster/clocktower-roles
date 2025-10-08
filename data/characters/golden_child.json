@@ -1,0 +1,1 @@
+{"name": "Golden Child", "ability": "The 1st player to nominate you, turns evil that night. If you\n              nominate yourself 1st, your team loses.", "type": "outsider", "icon": "golden_child.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

@@ -1,0 +1,1 @@
+{"name": "Astrologer", "ability": "Each day, ask the Storyteller to tell you 1 piece of false\n              information.", "type": "townsfolk", "icon": "astrologer.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}

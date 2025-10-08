@@ -1,0 +1,1 @@
+{"name": "Coachman", "ability": "Each day, choose a 1 word topic on which the Storyteller tells you\n              1 fact. If an alive neighbour is evil, you get false info.", "type": "townsfolk", "icon": "coachman.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}
