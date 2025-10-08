@@ -1,1 +1,0 @@
-{"name": "Klutz", "ability": "When you learn that you died, publicly choose 1 alive player: if they are evil, your team loses.", "type": "outsider", "icon": "klutz.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "3 - Sects and Violets"}

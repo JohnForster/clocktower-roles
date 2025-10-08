@@ -1,1 +1,0 @@
-{"name": "Witch", "ability": "Each night, choose a player: if they nominate tomorrow, they die. If just 3 players live, you lose this ability.", "type": "minion", "icon": "witch.png", "first_night": true, "other_nights": true, "reminders": ["CURSED"], "affects_setup": false, "home_script": "3 - Sects and Violets"}

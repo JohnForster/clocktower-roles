@@ -1,1 +1,0 @@
-{"name": "Harlot", "ability": "Each night*, choose a living player: if they agree, you learn their character, but you both might die.", "type": "travellers", "icon": "harlot.png", "first_night": false, "other_nights": true, "reminders": ["DEAD", "DEAD"], "affects_setup": false, "home_script": "3 - Sects and Violets"}

@@ -1,1 +1,0 @@
-{"name": "Wraith", "ability": "You may choose to open your eyes at night. You wake when other evil players do.", "type": "minion", "icon": "wraith.png", "first_night": true, "other_nights": true, "reminders": [], "affects_setup": false, "home_script": "4b - Carousel Experimental"}

@@ -1,1 +1,0 @@
-{"name": "Xaan", "ability": "On night X, all Townsfolk are poisoned until dusk. [X Outsiders]", "type": "minion", "icon": "xaan.png", "first_night": true, "other_nights": true, "reminders": ["NIGHT 3", "NIGHT 1", "X", "NIGHT 2"], "affects_setup": true, "home_script": "4b - Carousel Experimental"}

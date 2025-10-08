@@ -1,1 +1,0 @@
-{"name": "Librarian", "ability": "You start knowing that 1 of 2 players is a particular Outsider. (Or that zero are in play.)", "type": "townsfolk", "icon": "librarian.png", "first_night": true, "other_nights": false, "reminders": ["OUTSIDER", "WRONG"], "affects_setup": false, "home_script": "1 - Trouble Brewing"}

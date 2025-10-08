@@ -1,1 +1,0 @@
-{"name": "Bone Collector", "ability": "Once per game, at night*, choose a dead player: they regain their ability until dusk.", "type": "travellers", "icon": "bonecollector.png", "first_night": false, "other_nights": true, "reminders": ["NO ABILITY", "HAS ABILITY"], "affects_setup": false, "home_script": "3 - Sects and Violets"}

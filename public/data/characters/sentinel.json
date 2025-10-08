@@ -1,1 +1,0 @@
-{"name": "Sentinel", "ability": "There might be 1 extra or 1 fewer Outsider in play.", "type": "fabled", "icon": "sentinel.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Extras"}

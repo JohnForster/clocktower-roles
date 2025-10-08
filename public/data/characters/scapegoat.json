@@ -1,1 +1,0 @@
-{"name": "Scapegoat", "ability": "If a player of your alignment is executed, you might be executed instead.", "type": "travellers", "icon": "scapegoat.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "1 - Trouble Brewing"}

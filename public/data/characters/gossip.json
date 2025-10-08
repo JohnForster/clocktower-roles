@@ -1,1 +1,0 @@
-{"name": "Gossip", "ability": "Each day, you may make a public statement. Tonight, if it was true, a player dies.", "type": "townsfolk", "icon": "gossip.png", "first_night": false, "other_nights": true, "reminders": ["DEAD"], "affects_setup": false, "home_script": "2 - Bad Moon Rising"}

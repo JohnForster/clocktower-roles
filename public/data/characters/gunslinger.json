@@ -1,1 +1,0 @@
-{"name": "Gunslinger", "ability": "Each day, after the 1st vote has been tallied, you may choose a player that voted: they die.", "type": "travellers", "icon": "gunslinger.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "1 - Trouble Brewing"}

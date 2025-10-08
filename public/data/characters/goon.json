@@ -1,1 +1,0 @@
-{"name": "Goon", "ability": "Each night, the 1st player to choose you with their ability is drunk until dusk. You become their alignment.", "type": "outsider", "icon": "goon.png", "first_night": false, "other_nights": false, "reminders": ["DRUNK"], "affects_setup": false, "home_script": "2 - Bad Moon Rising"}

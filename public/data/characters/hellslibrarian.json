@@ -1,1 +1,0 @@
-{"name": "Hell's Librarian", "ability": "Something bad might happen to whoever talks when the Storyteller has asked for silence.", "type": "fabled", "icon": "hellslibrarian.png", "first_night": false, "other_nights": false, "reminders": ["SOMETHING BAD"], "affects_setup": false, "home_script": "Extras"}

@@ -1,1 +1,0 @@
-{"name": "Noble", "ability": "You start knowing 3 players, 1 and only 1 of which is evil.", "type": "townsfolk", "icon": "noble.png", "first_night": true, "other_nights": false, "reminders": ["KNOW", "KNOW", "KNOW"], "affects_setup": false, "home_script": "4a - Kickstarter Experimental"}

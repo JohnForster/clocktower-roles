@@ -1,1 +1,0 @@
-{"name": "Devil's Advocate", "ability": "Each night, choose a living player (different to last night): if executed tomorrow, they don't die.", "type": "minion", "icon": "devilsadvocate.png", "first_night": true, "other_nights": true, "reminders": ["SURVIVES EXECUTION"], "affects_setup": false, "home_script": "2 - Bad Moon Rising"}

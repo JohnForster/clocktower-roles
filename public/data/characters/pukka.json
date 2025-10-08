@@ -1,1 +1,0 @@
-{"name": "Pukka", "ability": "Each night, choose a player: they are poisoned. The previously poisoned player dies then becomes healthy.", "type": "demon", "icon": "pukka.png", "first_night": true, "other_nights": true, "reminders": ["POISONED", "DEAD"], "affects_setup": false, "home_script": "2 - Bad Moon Rising"}

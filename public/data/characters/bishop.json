@@ -1,1 +1,0 @@
-{"name": "Bishop", "ability": "Only the Storyteller can nominate. At least 1 opposing player must be nominated each day.", "type": "travellers", "icon": "bishop.png", "first_night": false, "other_nights": false, "reminders": ["NOMINATE EVIL", "NOMINATE GOOD"], "affects_setup": false, "home_script": "2 - Bad Moon Rising"}

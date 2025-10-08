@@ -1,1 +1,0 @@
-{"name": "Fool", "ability": "The 1st time you die, you don't.", "type": "townsfolk", "icon": "fool.png", "first_night": false, "other_nights": false, "reminders": ["NO ABILITY"], "affects_setup": false, "home_script": "2 - Bad Moon Rising"}

@@ -1,1 +1,0 @@
-{"name": "Legion", "ability": "Each night*, a player might die. Executions fail if only evil voted. You register as a Minion too. [Most players are Legion]", "type": "demon", "icon": "legion.png", "first_night": false, "other_nights": true, "reminders": ["ABOUT TO DIE", "DEAD"], "affects_setup": true, "home_script": "4a - Kickstarter Experimental"}

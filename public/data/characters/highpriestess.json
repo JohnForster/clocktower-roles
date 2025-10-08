@@ -1,1 +1,0 @@
-{"name": "High Priestess", "ability": "Each night, learn which player the Storyteller believes you should talk to most.", "type": "townsfolk", "icon": "highpriestess.png", "first_night": true, "other_nights": true, "reminders": [], "affects_setup": false, "home_script": "4b - Carousel Experimental"}

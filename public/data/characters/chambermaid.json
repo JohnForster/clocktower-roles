@@ -1,1 +1,0 @@
-{"name": "Chambermaid", "ability": "Each night, choose 2 alive players (not yourself): you learn how many woke tonight due to their ability.", "type": "townsfolk", "icon": "chambermaid.png", "first_night": true, "other_nights": true, "reminders": [], "affects_setup": false, "home_script": "2 - Bad Moon Rising"}

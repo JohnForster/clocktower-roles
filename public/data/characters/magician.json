@@ -1,1 +1,0 @@
-{"name": "Magician", "ability": "The Demon thinks you are a Minion. Minions think you are a Demon.", "type": "townsfolk", "icon": "magician.png", "first_night": true, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "4a - Kickstarter Experimental"}

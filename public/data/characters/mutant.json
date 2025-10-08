@@ -1,1 +1,0 @@
-{"name": "Mutant", "ability": "If you are 'mad' about being an Outsider, you might be executed.", "type": "outsider", "icon": "mutant.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "3 - Sects and Violets"}

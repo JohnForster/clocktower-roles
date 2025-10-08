@@ -23,7 +23,9 @@ export async function loadCharactersByScript(
   // Filter out unreleased characters unless explicitly included
   const filteredCharacters = includeUnreleased
     ? allCharacters
-    : allCharacters.filter((character) => character.home_script !== "Unreleased");
+    : allCharacters.filter(
+        (character) => character.home_script !== "Unreleased"
+      );
 
   // Handle special script combinations
   if (scriptName === "Base 3") {
@@ -50,7 +52,9 @@ export async function loadCharactersByScript(
   );
 }
 
-export async function getAvailableScripts(includeUnreleased: boolean = false): Promise<string[]> {
+export async function getAvailableScripts(
+  includeUnreleased: boolean = false
+): Promise<string[]> {
   const allCharacters = await loadAllCharacters();
   const scriptNames = new Set<string>();
 
@@ -99,5 +103,5 @@ export async function loadScriptData(): Promise<Script[]> {
 // Helper function to get character image path
 export function getCharacterImagePath(character: Character): string {
   // Use relative path that works with Vite base configuration
-  return `${import.meta.env.BASE_URL}data/images/${character.icon}`;
+  return `${import.meta.env.BASE_URL}images/${character.icon}`;
 }

@@ -1,1 +1,0 @@
-{"name": "Undertaker", "ability": "Each night*, you learn which character died by execution today.", "type": "townsfolk", "icon": "undertaker.png", "first_night": false, "other_nights": true, "reminders": ["DIED TODAY"], "affects_setup": false, "home_script": "1 - Trouble Brewing"}

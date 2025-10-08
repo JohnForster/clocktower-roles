@@ -1,1 +1,0 @@
-{"name": "Tea Lady", "ability": "If both your alive neighbors are good, they can't die.", "type": "townsfolk", "icon": "tealady.png", "first_night": false, "other_nights": false, "reminders": ["CANNOT DIE", "CANNOT DIE"], "affects_setup": false, "home_script": "2 - Bad Moon Rising"}

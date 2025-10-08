@@ -1,1 +1,0 @@
-{"name": "Amnesiac", "ability": "You do not know what your ability is. Each day, privately guess what it is: you learn how accurate you are.", "type": "townsfolk", "icon": "amnesiac.png", "first_night": true, "other_nights": true, "reminders": ["?", "?", "?"], "affects_setup": false, "home_script": "4a - Kickstarter Experimental"}

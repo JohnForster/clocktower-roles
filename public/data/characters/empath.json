@@ -1,1 +1,0 @@
-{"name": "Empath", "ability": "Each night, you learn how many of your 2 alive neighbors are evil.", "type": "townsfolk", "icon": "empath.png", "first_night": true, "other_nights": true, "reminders": [], "affects_setup": false, "home_script": "1 - Trouble Brewing"}

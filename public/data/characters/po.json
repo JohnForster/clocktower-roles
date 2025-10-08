@@ -1,1 +1,0 @@
-{"name": "Po", "ability": "Each night*, you may choose a player: they die. If your last choice was no-one, choose 3 players tonight.", "type": "demon", "icon": "po.png", "first_night": false, "other_nights": true, "reminders": ["DEAD", "DEAD", "DEAD", "3 ATTACKS"], "affects_setup": false, "home_script": "2 - Bad Moon Rising"}

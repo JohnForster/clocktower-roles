@@ -1,1 +1,0 @@
-{"name": "Steward", "ability": "You start knowing 1 good player.", "type": "townsfolk", "icon": "steward.png", "first_night": true, "other_nights": false, "reminders": ["KNOW"], "affects_setup": false, "home_script": "4b - Carousel Experimental"}

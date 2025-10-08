@@ -1,1 +1,0 @@
-{"name": "Angel", "ability": "Something bad might happen to whoever is most responsible for the death of a new player.", "type": "fabled", "icon": "angel.png", "first_night": false, "other_nights": false, "reminders": ["SOMETHING BAD", "PROTECTED"], "affects_setup": false, "home_script": "Extras"}

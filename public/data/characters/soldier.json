@@ -1,1 +1,0 @@
-{"name": "Soldier", "ability": "You are safe from the Demon.", "type": "townsfolk", "icon": "soldier.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "1 - Trouble Brewing"}

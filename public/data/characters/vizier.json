@@ -1,1 +1,0 @@
-{"name": "Vizier", "ability": "All players know you are the Vizier. You cannot die during the day. If good voted, you may choose to execute immediately.", "type": "minion", "icon": "vizier.png", "first_night": true, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "4b - Carousel Experimental"}

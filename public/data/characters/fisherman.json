@@ -1,1 +1,0 @@
-{"name": "Fisherman", "ability": "Once per game, during the day, visit the Storyteller for some advice to help your team win.", "type": "townsfolk", "icon": "fisherman.png", "first_night": false, "other_nights": false, "reminders": ["NO ABILITY"], "affects_setup": false, "home_script": "4b - Carousel Experimental"}

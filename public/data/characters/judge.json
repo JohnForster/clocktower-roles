@@ -1,1 +1,0 @@
-{"name": "Judge", "ability": "Once per game, if another player nominated, you may choose to force the current execution to pass or fail.", "type": "travellers", "icon": "judge.png", "first_night": false, "other_nights": false, "reminders": ["NO ABILITY"], "affects_setup": false, "home_script": "2 - Bad Moon Rising"}

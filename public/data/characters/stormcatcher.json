@@ -1,1 +1,0 @@
-{"name": "Storm Catcher", "ability": "Name a good character. If in play, they can only die by execution, but evil players learn which player it is.", "type": "fabled", "icon": "stormcatcher.png", "first_night": false, "other_nights": false, "reminders": ["SAFE"], "affects_setup": false, "home_script": "4a - Kickstarter Experimental"}

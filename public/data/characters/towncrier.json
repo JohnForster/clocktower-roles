@@ -1,1 +1,0 @@
-{"name": "Town Crier", "ability": "Each night*, you learn if a Minion nominated today.", "type": "townsfolk", "icon": "towncrier.png", "first_night": false, "other_nights": true, "reminders": ["MINION NOMINATED", "MINIONS NOT NOMINATED"], "affects_setup": false, "home_script": "3 - Sects and Violets"}

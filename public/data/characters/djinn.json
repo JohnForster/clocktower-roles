@@ -1,1 +1,0 @@
-{"name": "Djinn", "ability": "Use the Djinn's special rule. All players know what it is.", "type": "fabled", "icon": "djinn.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Extras"}

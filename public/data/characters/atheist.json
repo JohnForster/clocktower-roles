@@ -1,1 +1,0 @@
-{"name": "Atheist", "ability": "The Storyteller can break the game rules, and if executed, good wins, even if you are dead. [No evil characters]", "type": "townsfolk", "icon": "atheist.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": true, "home_script": "4a - Kickstarter Experimental"}

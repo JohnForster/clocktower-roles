@@ -1,1 +1,0 @@
-{"name": "Fibbin", "ability": "Once per game, 1 good player might get incorrect information.", "type": "fabled", "icon": "fibbin.png", "first_night": false, "other_nights": false, "reminders": ["NO ABILITY"], "affects_setup": false, "home_script": "Extras"}
