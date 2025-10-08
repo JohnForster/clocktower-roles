@@ -1,0 +1,11 @@
+{
+  "name": "Fanzazz",
+  "ability": "Each night*, choose a player: they die & you become their alignment. If you die, your team loses. If only 2 players live, your team wins.",
+  "type": "demon",
+  "icon": "fanzazz.png",
+  "first_night": false,
+  "other_nights": false,
+  "reminders": [],
+  "affects_setup": false,
+  "home_script": "Unreleased"
+}
