@@ -1,1 +1,11 @@
-{"name": "Dowager", "ability": "If you died today or tonight, the Demon sees the Grimoire.", "type": "outsider", "icon": "dowager.png", "first_night": false, "other_nights": false, "reminders": [], "affects_setup": false, "home_script": "Unreleased"}
+{
+  "name": "Dowager",
+  "ability": "If you died today or tonight, the Demon sees the Grimoire.",
+  "type": "outsider",
+  "icon": "dowager.png",
+  "first_night": false,
+  "other_nights": false,
+  "reminders": [],
+  "affects_setup": false,
+  "home_script": "Unreleased"
+}
