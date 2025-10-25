@@ -3,6 +3,7 @@ import { Character, FlashcardQuestion } from "../types/character";
 import { loadCharactersByScript, getCharacterImagePath } from "../utils/dataLoader";
 import { generateFlashcardQuestion } from "../utils/questionGenerator";
 import { useProgress } from "../hooks/useProgress";
+import { logSession } from "../utils/logger";
 
 interface FlashcardGameProps {
   selectedScript: string;
@@ -116,6 +117,13 @@ export const FlashcardGame: React.FC<FlashcardGameProps> = ({
           generateNextQuestion(filteredCharacters, shuffled);
           // Start background preloading in the order questions will appear
           startBackgroundPreloading(shuffled);
+
+          // Log session start
+          logSession({
+            script: selectedScript,
+            includeTravellers,
+            characterCount: filteredCharacters.length,
+          });
         }
       } catch (error) {
         console.error("Failed to load characters:", error);
