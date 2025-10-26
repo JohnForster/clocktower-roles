@@ -34,13 +34,13 @@ function App() {
 
   return (
     <div className="app">
-      {!gameStarted && (
-        <header className="app-header">
-          <h1>{unreleasedUnlocked && "⭐️ "}Clocktower Role Revision</h1>
-        </header>
-      )}
+        {!gameStarted && (
+          <header className="app-header">
+            <h1>{unreleasedUnlocked && "⭐️ "}Clocktower Role Revision</h1>
+          </header>
+        )}
 
-      <main className="app-main">
+        <main className="app-main">
         {!gameStarted ? (
           <ScriptSelector
             selectedScript={selectedScript}
