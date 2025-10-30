@@ -476,6 +476,11 @@ body {
   background-color: #535bf2;
 }
 
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media (prefers-color-scheme: light) {
   .script-selector h2 {
     color: #213547;

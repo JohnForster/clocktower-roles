@@ -34,13 +34,13 @@ function App() {
 
   return (
     <div className="app">
-        {!gameStarted && (
-          <header className="app-header">
-            <h1>{unreleasedUnlocked && "⭐️ "}Clocktower Role Revision</h1>
-          </header>
-        )}
+      {!gameStarted && (
+        <header className="app-header">
+          <h1>{unreleasedUnlocked && "⭐️ "}Clocktower Role Revision</h1>
+        </header>
+      )}
 
-        <main className="app-main">
+      <main className="app-main">
         {!gameStarted ? (
           <ScriptSelector
             selectedScript={selectedScript}
@@ -52,15 +52,21 @@ function App() {
           />
         ) : (
           <div className="game-container">
-            <button
-              className="back-button"
-              onClick={() => {
-                setGameStarted(false);
-                setSelectedScript(null);
-              }}
-            >
-              ← Back to Script Selection
-            </button>
+            <div className="buttons">
+              <button
+                className="back-button"
+                onClick={() => {
+                  setGameStarted(false);
+                  setSelectedScript(null);
+                }}
+              >
+                ← Back to Script Selection
+              </button>
+
+              <a href="https://forms.gle/z1yeAW7x91X4Uc4H8" target="_blank">
+                <button className="back-button">⭐️ Give Feedback</button>
+              </a>
+            </div>
             <FlashcardGame
               selectedScript={selectedScript!}
               includeTravellers={includeTravellers}
